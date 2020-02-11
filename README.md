@@ -7,6 +7,12 @@ W_WDict 意为When and Where， 本App希望能够让用户把记录新词汇的
 
 将单词融在日常生活的记忆里才是真正学到
 
+## 界面展示
+
+![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/pre%20img/W_W1.jpg)
+
+![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/pre%20img/W_W2.jpg)
+
 ## 功能介绍
 
 课堂上，国外的路边，电视上碰见了陌生的单词又没法随手查怎么办?
