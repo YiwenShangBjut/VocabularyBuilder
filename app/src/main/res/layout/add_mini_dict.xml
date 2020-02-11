@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:id="@+id/layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+  <RelativeLayout
+      android:id="@+id/name_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/comment_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/name_layout"
+      android:layout_margin="20dp"
+      >
+    <TextView
+        android:id="@+id/comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_toRightOf="@+id/comment_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </RelativeLayout>
+
+  </RelativeLayout>
+
+</LinearLayout>

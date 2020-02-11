@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/English"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textSize="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="?attr/actionBarSize"
+                />
+            <TextView
+                android:id="@+id/Phonetic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="/phonetic/"
+                android:textSize="15dp"
+                android:padding="10dp"
+
+                android:layout_below="@id/English"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/Property"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=".adj"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_below="@+id/Phonetic"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/darkGreen"/>
+
+            <TextView
+                android:id="@+id/Chinese"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="中文释义"
+                android:textSize="15dp"
+                android:layout_below="@+id/Property"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/Show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Show Chinese"
+                android:textColor="@color/blue"
+                android:gravity="center_horizontal"/>
+
+            <!--<View-->
+            <!--android:id="@+id/divider2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="600dp"-->
+            <!--android:background="@color/lightGreen"-->
+
+            <!--android:layout_below="@+id/Chinese"-->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/Meaning"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="here is the English meaning of the word, it won't be too long"
+                android:textSize="15dp"
+                android:layout_below="@+id/Chinese"
+
+                android:padding="15dp"
+                android:textStyle="italic"
+                android:background="@color/lightGreen"/>
+
+
+            <ImageView
+                android:id="@+id/Photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/Meaning"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:src="@drawable/md_camera_icon"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ios_create"
+            />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

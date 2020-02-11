@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_marginTop="?attr/actionBarSize"
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkGreen"
+        android:foreground="@drawable/md_add"
+        android:foregroundTint="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <!--顶部的横线和图片-->
+
+        <RelativeLayout
+            android:id="@+id/main_linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/darkGreen" />
+
+            <ImageView
+                android:id="@+id/main_shake_top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:background="@color/darkGreen"
+                android:src="@mipmap/shake_top" />
+
+            <ImageView
+                android:id="@+id/main_shake_top_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/main_shake_top"
+                android:background="@mipmap/shake_top_line" />
+        </RelativeLayout>
+
+        <!--底部的横线和图片-->
+        <RelativeLayout
+            android:id="@+id/main_linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_linear_top"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_shake_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@mipmap/shake_bottom_line" />
+
+            <ImageView
+                android:id="@+id/main_shake_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/main_shake_bottom_line"
+                android:layout_centerHorizontal="true"
+                android:background="@color/darkGreen"
+                android:src="@mipmap/shake_bottom" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/main_shake_bottom"
+                android:background="@color/darkGreen" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

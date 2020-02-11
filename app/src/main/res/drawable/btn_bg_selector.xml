@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <!-- 填充颜色 -->
+            <solid android:color="@android:color/holo_green_light"/>
+            <!-- 线的宽度，颜色 -->
+            <stroke android:width="1dp" android:color="@android:color/holo_green_light"/>
+            <!-- 矩形的圆角半径 -->
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <!-- 填充颜色 -->
+            <solid android:color="@color/darkGreen"/>
+            <!-- 线的宽度，颜色 -->
+            <stroke android:width="1dp" android:color="@color/darkGreen"/>
+            <!-- 矩形的圆角半径 -->
+            <corners android:radius="25dp" />
+        </shape>
+    </item>
+</selector>
+
+    <!--https://blog.csdn.net/lin_dianwei/article/details/79678062 -->

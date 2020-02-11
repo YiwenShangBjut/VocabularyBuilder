@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+     <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/Photo"
+       android:textSize="10dp"
+         android:textColor="@color/normalGrey"
+     />
+
+    <RelativeLayout
+        android:id="@+id/English_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Location"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/English_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="English:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/English"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/English_tv"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:enabled="true"
+            android:maxLines="1"
+            android:maxLength="50"/>
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speak"
+            android:layout_toRightOf="@+id/English"
+            android:layout_alignBottom="@+id/English"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Phonetic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/English_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/Phonetic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Phonetic:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Phonetic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Phonetic_tv"
+            android:maxLines="5"
+            android:maxLength="100"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Property_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phonetic_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/Property_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Property:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Property_tv"
+            android:maxLines="1"
+            android:maxLength="10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Chinese_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Property_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/Chinese_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Chinese:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Chinese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Chinese_tv"
+            android:maxLines="5"
+            android:maxLength="100"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Meaning_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chinese_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/Meaning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Meaning:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Meaning_tv"
+            android:maxLines="10"
+            android:maxLength="1000"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkOnInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Meaning_layout"/>
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Meaning_layout"
+        android:layout_toRightOf="@+id/checkOnInternet"/>
+
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
+

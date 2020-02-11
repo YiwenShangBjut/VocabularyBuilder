@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <View
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/planCardView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        app:cardMaxElevation="20dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:clickable="false"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="20dp"
+        android:layout_below="@+id/view1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp">
+                <TextView
+                    android:id="@+id/left_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left"
+                    android:textSize="15dp"
+                    android:textColor="@color/normalGrey"
+                   />
+
+                <TextView
+                    android:id="@+id/left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/days_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="days"
+                    android:textSize="10dp"
+                    android:textColor="@color/normalGrey"
+                    android:layout_toRightOf="@+id/left"
+                    android:layout_alignBaseline="@+id/left"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TodayWord_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/left_layout"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:id="@+id/TodayWord_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textSize="15dp"
+                    android:textColor="@color/normalGrey"
+                    />
+
+                <TextView
+                    android:id="@+id/TodayWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/word_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="words"
+                    android:textSize="10dp"
+                    android:textColor="@color/normalGrey"
+                    android:layout_toRightOf="@+id/TodayWord"
+                    android:layout_alignBaseline="@+id/TodayWord"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/plan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left_layout"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/changPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plan"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dict_name"
+                    android:textColor="@drawable/btn_text_selector"
+                    android:background="@drawable/btn_bg_selector"
+                   android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/process_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plan_layout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp">
+
+                <TextView
+                    android:id="@+id/already_finished_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already finished: "
+                    android:textSize="15dp"
+                    android:textColor="@color/normalGrey"
+                    />
+                <TextView
+                    android:id="@+id/first_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toRightOf="@id/already_finished_tv"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/first_num"/>
+                <TextView
+                    android:id="@+id/second_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/slash"
+                    android:textSize="15dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_below="@+id/already_finished_tv" />
+                    <!--  android:progressDrawable="@drawable/progressbar_bg"-->
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/planCardView">
+
+    </View>
+
+    <Button
+        android:id="@+id/displayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:text="Show the list"/>
+
+    <Button
+        android:id="@+id/Mini_Dict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayList"
+        android:text="Mini Dict"/>
+
+        <Button
+            android:id="@+id/getLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn off location reminder"
+            android:layout_below="@+id/Mini_Dict"
+            />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getLocation"
+        android:scrollbars="vertical"
+        />
+    <TextView
+        android:id="@+id/setReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set this place to remind"
+        android:textSize="10dp"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/location_tv"/>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
+</LinearLayout>

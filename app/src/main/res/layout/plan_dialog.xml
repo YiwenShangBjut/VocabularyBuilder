@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:text="I WANT TO"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="LEARN"/>
+        <EditText
+            android:id="@+id/word_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:text="100"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:fontFamily="casual"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:text="WORDS IN"/>
+
+        <EditText
+            android:id="@+id/day_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:text="10"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:fontFamily="casual"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="50dp"
+            android:text="DAYS"/>
+        <Button
+            android:id="@+id/decide_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_selector"
+            android:text="Decide!"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/plan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan start on "/>
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-12-5 "/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset"
+        android:textColor="@color/blue" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+    </View>
+
+</LinearLayout>
