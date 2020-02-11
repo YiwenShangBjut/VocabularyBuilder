@@ -9,9 +9,9 @@ W_WDict 意为When and Where， 本App希望能够让用户把记录新词汇的
 
 ## 界面展示
 
-![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/pre%20img/W_W1.jpg)
+![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/img/W_W1.png)
 
-![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/pre%20img/W_W2.jpg)
+![image](https://github.com/YiwenShangBjut/VocabularyBuilder/blob/master/img/W_W2.png)
 
 ## 功能介绍
 
